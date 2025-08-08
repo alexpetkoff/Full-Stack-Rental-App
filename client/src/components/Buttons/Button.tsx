@@ -4,7 +4,7 @@ type ButtonProps = {
 };
 
 const Button = ({ variant, children }: ButtonProps) => {
-  const type: Record<string, string> = {
+  const type: Record<"outline" | "secondary", string> = {
     outline:
       "text-center px-4 py-2 text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 rounded-[8px] ring-1 ring-white font-[600]",
     secondary:
