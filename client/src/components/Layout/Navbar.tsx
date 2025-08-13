@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Button from "../Buttons/Button";
-//test
+
 const Navbar = () => {
   return (
     <div
-      className="fixed top-0 left-0 w-full z-50 shadow-xl"
+      className="sticky top-0 left-0 w-full z-50 shadow-xl"
       style={{ height: `${NAVBAR_HEIGHT}px` }}
     >
       <div className="flex justify-between items-center w-full py-3 px-8 bg-primary-700">
@@ -23,13 +23,11 @@ const Navbar = () => {
                 alt="Rentiful Logo"
                 width={24}
                 height={24}
-                className="w-6 h-6"
+                className="w-6 h-6 fill-amber-500"
               />
-              <div className="text-xl text-white font-bold">
+              <div className="text-2xl text-white font-bold">
                 RENT
-                <span className="text-secondary-500 font-light pl-0.5">
-                  IFUL
-                </span>
+                <span className="text-secondary-500 pl-0.5">IFUL</span>
               </div>
             </div>
           </Link>
