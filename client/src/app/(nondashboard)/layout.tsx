@@ -1,5 +1,4 @@
 import Navbar from "@/components/Layout/Navbar";
-import { NAVBAR_HEIGHT } from "@/lib/constants";
 import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
