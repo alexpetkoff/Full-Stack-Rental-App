@@ -22,7 +22,7 @@ const itemVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-const FeaturesSection = () => {
+const DiscoverSection = () => {
   return (
     <motion.div
       initial="hidden"
@@ -41,7 +41,7 @@ const FeaturesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
           {[0, 1, 2].map((index) => (
             <motion.div key={`animated - ${index}`} variants={itemVariants}>
-              <FeatureCard
+              <DiscoverCard
                 imageSrc={`/landing-search${3 - index}.png`}
                 title={
                   [
@@ -68,7 +68,7 @@ const FeaturesSection = () => {
   );
 };
 
-type FeatureCardProps = {
+type DiscoverCardTypes = {
   imageSrc: string;
   title: string;
   description: string;
@@ -76,13 +76,13 @@ type FeatureCardProps = {
   linkHref: string;
 };
 
-const FeatureCard = ({
+const DiscoverCard = ({
   imageSrc,
   title,
   description,
   linkText,
   linkHref,
-}: FeatureCardProps) => {
+}: DiscoverCardTypes) => {
   return (
     <div className="text-center flex flex-col items-center">
       <div className="p-4 rounded-lg mb-4 flex items-center justify-center h-48">
@@ -107,4 +107,4 @@ const FeatureCard = ({
   );
 };
 
-export default FeaturesSection;
+export default DiscoverSection;
