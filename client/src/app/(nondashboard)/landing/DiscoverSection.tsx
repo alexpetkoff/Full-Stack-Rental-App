@@ -51,13 +51,13 @@ const DiscoverSection = () => {
                 "Browse through our extensive collection of rental properties in your desired location.",
             },
             {
-              imageSrc: "/landing-icon-wand.png",
+              imageSrc: "/landing-icon-calendar.png",
               title: "Book your rental",
               description:
                 "Once your find your rental property, easily book it online with just a few clicks.",
             },
             {
-              imageSrc: "/landing-icon-wand.png",
+              imageSrc: "/landing-icon-heart.png",
               title: "Enjoy your New Home",
               description: "Move into your property and enjoy your new home.",
             },
