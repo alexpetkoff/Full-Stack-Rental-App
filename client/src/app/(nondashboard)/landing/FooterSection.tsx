@@ -66,10 +66,8 @@ const FooterSection = () => {
               </li>
             </ul>
           </nav>
-          {/* <div className="flex space-x-4 mb-4">
-            <a
-          </div> */}
         </div>
+        <p className="text-center pt-4">All rights reserved!</p>
       </div>
     </footer>
   );

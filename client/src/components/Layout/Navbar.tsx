@@ -1,13 +1,37 @@
+"use client";
+
 import { NAVBAR_HEIGHT } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../Buttons/Button";
 
 const Navbar = () => {
+  const [navbarPosition, setNavbarPosition] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setNavbarPosition(true);
+      } else {
+        setNavbarPosition(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div
-      className="absolute top-0 left-0 w-full z-50 shadow-xl"
+      className={`top-0 left-0 w-full z-50 shadow-xl transition-transform duration-500 ease-in-out ${
+        navbarPosition
+          ? "fixed translate-y-0 navbar-slidein"
+          : "absolute translate-y-0 navbar-slidein"
+      }`}
       style={{ height: `${NAVBAR_HEIGHT}px` }}
     >
       <div className="flex justify-between items-center w-full py-3 px-8 bg-primary-700">

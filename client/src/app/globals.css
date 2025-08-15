@@ -215,3 +215,18 @@ input::placeholder {
 input:focus {
   border: none;
 }
+
+.navbar-slidein {
+  animation: 0.3s linear forwards slide-in-navbar;
+}
+
+@keyframes slide-in-navbar {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
