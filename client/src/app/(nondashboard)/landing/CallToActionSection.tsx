@@ -86,7 +86,7 @@ const CallToActionSection = () => {
                   }}
                 >
                   Search for properties with our inovative search engine. Find
-                  the best places to stay for short or long period
+                  the best places to stay for short or long period.
                 </div>
               )}
               <Link

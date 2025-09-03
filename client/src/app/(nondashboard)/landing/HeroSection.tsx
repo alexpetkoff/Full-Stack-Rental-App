@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/Buttons/Button";
-import { NAVBAR_HEIGHT } from "@/lib/constants";
 
 const HeroSection = () => {
   return (
